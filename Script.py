@@ -11,22 +11,24 @@ def is_enabled(value, default):
         return default
 
 class script(object):
-    HOME_BUTTONURL_UPDATES = environ.get("HOME_BUTTONURL_UPDATES", 'https://beingtek.com/ref/GreyMatter658')
-    START_TXT = environ.get("START_TXT", '''<b>Hello {} 👋🏻 Im Search Bot I can share Movies and Series 😁.</b>
+    HOME_BUTTONURL_UPDATES = environ.get("HOME_BUTTONURL_UPDATES", 'https://ROCKERSBACKUP')
+    START_TXT = environ.get("START_TXT", '''<b>🔖𝐇𝐞𝐲 {}
 
-<i>Aᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴛᴏ sᴇᴇ ᴛʜᴇ ᴍᴀɢɪᴄ ᴏʀ ʀᴇᴀᴅ ᴍᴏʀᴇ ғʀᴏᴍ ᴛʜᴇ ᴍᴇɴᴜ ʙᴇʟᴏᴡ</i>''')
+" 𝐈 𝐚𝐦 𝐚𝐮𝐭𝐨+𝐦𝐚𝐧𝐮𝐚𝐥 𝐟𝐢𝐥𝐭𝐞𝐫 𝐛𝐨𝐭 𝐚𝐥𝐬𝐨 𝐚𝐮𝐭𝐨 𝐝𝐞𝐥𝐞𝐭𝐞 𝐟𝐞𝐚𝐭𝐮𝐫𝐞 𝐢𝐧 𝐚𝐮𝐭𝐨 𝐟𝐢𝐥𝐭𝐞𝐫 𝐚𝐧𝐝 𝐦𝐚𝐧𝐮𝐚𝐥𝐥 𝐟𝐢𝐥𝐭𝐞𝐫 𝐛𝐨𝐭 "
+
+\n𝐀𝐝𝐝 𝐦𝐞 𝐭𝐨 𝐮𝐫 𝐠𝐫𝐨𝐮𝐩 𝐈 𝐰𝐢𝐥𝐥 𝐩𝐫𝐨𝐯𝐢𝐝𝐞 𝐚𝐥𝐥 𝐦𝐨𝐯𝐢𝐞𝐬 𝐟𝐢𝐫𝐬𝐭 𝐢𝐧 𝐭𝐞𝐥𝐞𝐠𝐫𝐚𝐦\n''')
     HELP_TXT = """𝙷𝙴𝚈 {}
 𝙷𝙴𝚁𝙴 𝙸𝚂 𝙼𝚈 𝙷𝙴𝙻𝙿 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂."""
     ABOUT_TXT = """<b><i>🤖 ᴍʏ ɴᴀᴍᴇ : <a href=https://t.me/Search_zone_bot><b>Search Bot</b></a>\n
-👨‍💻 ᴅᴇᴠᴇʟᴏᴘᴇʀ : <a href=https://t.me/GreyMatter_Owner><b>GreyMatter</b></a>\n
+👨‍💻 ᴅᴇᴠᴇʟᴏᴘᴇʀ : <a href=https://t.me/Beastonejnanesh><b>JNANESH</b></a>\n
 📝 ʟᴀɴɢᴜᴀɢᴇ : ᴘʏʀᴏɢʀᴀᴍ\n
 📚 ꜰʀᴀᴍᴇᴡᴏʀᴋ : ᴘʏᴛʜᴏɴ 3\n
 📡 ʜᴏsᴛᴇᴅ ᴏɴ : ʜᴇʀᴏᴋᴜ\n
-📢 ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ : <a href=https://t.me/GreyMatter_Bots><b></b>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a>\n
+📢 ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ : <a href=https://t.me/ROCKERSBACKUP><b></b>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a>\n
 🌟 ᴠᴇʀsɪᴏɴ : ᴠ 4.0\n</b></i>"""
     SOURCE_TXT = """<b>𝐂𝐫𝐞𝐚𝐭𝐞 𝐎𝐧𝐞 𝐋𝐢𝐤𝐞 𝐓𝐡𝐢𝐬:</b>
 » I will Create One Bot For You<b>
-» Contact Me @GreyMatter_Owner<b>"""
+» Contact Me @ROCKERSBACKUP<b>"""
     MANUELFILTER_TXT = """Help: <b>Filters</b>
 
 - Filter is the feature were users can set automated replies for a particular keyword and Search Bot will respond whenever a keyword is found the message
