@@ -51,7 +51,7 @@ async def start(client, message):
             InlineKeyboardButton('UPDATES ', url='https://t.me/ROCKERSBACKUP')
             ],[
             InlineKeyboardButton('HELP', callback_data='help'),
-            InlineKeyboardButton('OWNER , callback_data='about')
+            InlineKeyboardButton('OWNER ', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
