@@ -14,12 +14,11 @@ class script(object):
     HOME_BUTTONURL_UPDATES = environ.get("HOME_BUTTONURL_UPDATES", 'https://ROCKERSBACKUP')
     START_TXT = environ.get("START_TXT", '''<b>🔖𝐇𝐞𝐲 {}
 
-" 𝐈 𝐚𝐦 𝐚𝐮𝐭𝐨+𝐦𝐚𝐧𝐮𝐚𝐥 𝐟𝐢𝐥𝐭𝐞𝐫 𝐛𝐨𝐭 𝐚𝐥𝐬𝐨 𝐚𝐮𝐭𝐨 𝐝𝐞𝐥𝐞𝐭𝐞 𝐟𝐞𝐚𝐭𝐮𝐫𝐞 𝐢𝐧 𝐚𝐮𝐭𝐨 𝐟𝐢𝐥𝐭𝐞𝐫 𝐚𝐧𝐝 𝐦𝐚𝐧𝐮𝐚𝐥𝐥 𝐟𝐢𝐥𝐭𝐞𝐫 𝐛𝐨𝐭 "
-
+" 𝐈 𝐚𝐦 𝐚𝐮𝐭𝐨+𝐦𝐚𝐧𝐮𝐚𝐥 𝐟𝐢𝐥𝐭𝐞𝐫 𝐛𝐨𝐭 𝐚𝐥𝐬𝐨 𝐚𝐮𝐭𝐨 𝐝𝐞𝐥𝐞𝐭𝐞 𝐟𝐞𝐚𝐭𝐮𝐫𝐞 𝐢𝐧 𝐚𝐮𝐭𝐨 𝐟𝐢𝐥𝐭𝐞𝐫 "
 \n𝐀𝐝𝐝 𝐦𝐞 𝐭𝐨 𝐮𝐫 𝐠𝐫𝐨𝐮𝐩 𝐈 𝐰𝐢𝐥𝐥 𝐩𝐫𝐨𝐯𝐢𝐝𝐞 𝐚𝐥𝐥 𝐦𝐨𝐯𝐢𝐞𝐬 𝐟𝐢𝐫𝐬𝐭 𝐢𝐧 𝐭𝐞𝐥𝐞𝐠𝐫𝐚𝐦\n''')
     HELP_TXT = """𝙷𝙴𝚈 {}
 𝙷𝙴𝚁𝙴 𝙸𝚂 𝙼𝚈 𝙷𝙴𝙻𝙿 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂."""
-    ABOUT_TXT = """<b><i>🤖 ᴍʏ ɴᴀᴍᴇ : <a href=https://t.me/Search_zone_bot><b>Search Bot</b></a>\n
+    ABOUT_TXT = """<b><i>🤖 ᴍʏ ɴᴀᴍᴇ : <a href=https://t.me/rockersallmoviesearchbot><b>moviesearchbot</b></a>\n
 👨‍💻 ᴅᴇᴠᴇʟᴏᴘᴇʀ : <a href=https://t.me/Beastonejnanesh><b>JNANESH</b></a>\n
 📝 ʟᴀɴɢᴜᴀɢᴇ : ᴘʏʀᴏɢʀᴀᴍ\n
 📚 ꜰʀᴀᴍᴇᴡᴏʀᴋ : ᴘʏᴛʜᴏɴ 3\n
