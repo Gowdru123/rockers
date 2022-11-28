@@ -70,7 +70,7 @@ async def start(client, message):
         btn = [
             [
                 InlineKeyboardButton(
-                   no", url=invite_link.invite_link
+                   "Join my updates channel", url=invite_link.invite_link
                 )
             ]
         ]
@@ -94,7 +94,7 @@ async def start(client, message):
             InlineKeyboardButton('ADD ME TO UR GROUP', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
             InlineKeyboardButton('⚡ OFFICIAL ⚡', url='https://t.me/+tU8INwk_RbRlYWM1'),
-            InlineKeyboardButton('UPDATES ', url='https://t.me/ROCKERSBACKUP')
+            InlineKeyboardButton('⚡ UPDATES ⚡ ', url='https://t.me/ROCKERSBACKUP')
             ],[
             InlineKeyboardButton('HELP', callback_data='help'),
             InlineKeyboardButton('OWNER , callback_data='about')
