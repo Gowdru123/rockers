@@ -108,7 +108,8 @@ async def next_page(bot, query):
 
     btn.insert(0,
         [
-            InlineKeyboardButton(text="⚡ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ⚡", url='https://t.me/+Rf7HPykmLC5hOWQ9')
+            InlineKeyboardButton(text="ROCKER'S OFFICIAL ©️", url='https://t.me/+tU8INwk_RbRlYWM1')
+            InlineKeyboardButton(text="🖥 𝐑𝐨𝐜𝐤𝐞𝐫'𝐬 𝐎𝐓𝐓 𝐏𝐋𝐀𝐓𝐅𝐎𝐑𝐌 UPDATES 🖥", url='https://t.me/+Rlq2sxuIJuZhMzM1')
         ]
     )
 
