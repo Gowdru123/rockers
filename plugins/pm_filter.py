@@ -78,7 +78,7 @@ async def give_filter(client, message):
                       )  
                        await asyncio.sleep(40) 
                        await op.delete() 
-                  elif btn == "[]": 
+               elif btn == "[]":
                       dp=await message.reply_cached_media( 
                           fileid,
                           caption=reply_text or "" 
