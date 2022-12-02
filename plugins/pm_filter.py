@@ -53,57 +53,9 @@ async def fil_mod(client, message):
 
 @Client.on_message((filters.group | filters.private) & filters.text & filters.incoming)
 async def give_filter(client, message):
-    group_id = message.chat.id 
-    name = message.text 
-    keywords = await get_filters(group_id) 
-    for keyword in reversed(sorted(keywords, key=len)): 
-        pattern = r"( |^|[^\w])" + re.escape(keyword) + r"( |$|[^\w])" 
-        if re.search(pattern, name, flags=re.IGNORECASE): 
-            reply_text, btn, alert, fileid = await find_filter(group_id, keyword) 
-            if reply_text: 
-               reply_text = reply_text.replace("\\n", "\n").replace("\\t", "\t") 
-            if btn is not None: 
-                try: 
-                   if fileid == "None": 
-                       if btn == "[]": 
-                           final_msg=await message.reply_text(reply_text, disable_web_page_preview=True) 
-                           await asyncio.sleep(40) 
-                           await final_msg.delete() 
-                   else: 
-                       button = eval(btn) 
-                       op=await message.reply_text( 
-                       reply_text, 
-                       disable_web_page_preview=True, 
-                       reply_markup=InlineKeyboardMarkup(button) 
-                      )  
-                       await asyncio.sleep(40) 
-                       await op.delete() 
-              
-                      dp=await message.reply_cached_media( 
-                          fileid,
-                          caption=reply_text or "" 
-                      ) 
-                      await asyncio.sleep(40) 
-                      await dp.delete() 
-                  else: 
-                      button = eval(btn) 
-                      up=await message.reply_cached_media( 
-                          fileid, 
-                          caption=reply_text or "", 
-                          reply_markup=InlineKeyboardMarkup(button) 
-                      ) 
-                      await asyncio.sleep(40) 
-                      await up.delete() 
-                except Exception as e:
-                    print(e) 
-                break 
-         else: 
-             if FILTER_MODE.get(str(message.chat.id)) == "False":
-                 return 
-             else: 
-                 await auto_filter(client, message) 
-    
-        
+    k = await manual_filters(client, message)
+    if k == False:
+        await auto_filter(client, message)
 
 
 @Client.on_callback_query(filters.regex(r"^next"))
@@ -888,13 +840,11 @@ async def manual_filters(client, message, text=False):
                 try:
                     if fileid == "None":
                         if btn == "[]":
-                           jj=await client.send_message(
+                           await client.send_message(
                                 group_id, 
                                 reply_text, 
                                 disable_web_page_preview=True,
-                                reply_to_message_id=reply_id)
-                                await asyncio.sleep(80) 
-                                await jj.delete()
+                                reply_to_message_id=reply_id)                                                        
                         else:
                             button = eval(btn)
                             pm=await client.send_message(
@@ -904,17 +854,13 @@ async def manual_filters(client, message, text=False):
                                 reply_markup=InlineKeyboardMarkup(button),
                                 reply_to_message_id=reply_id
                             )
-                            await asyncio.sleep(80)
-                            await pm.delete()
                     elif btn == "[]":
                         pb=await client.send_cached_media(
                             group_id,
                             fileid,
                             caption=reply_text or "",
                             reply_to_message_id=reply_id
-                        )
-                        await asyncio.sleep(80) 
-                        await pb.delete()
+                        )             
                     else:
                         button = eval(btn)
                         nk=await message.reply_cached_media(
@@ -922,9 +868,7 @@ async def manual_filters(client, message, text=False):
                             caption=reply_text or "",
                             reply_markup=InlineKeyboardMarkup(button),
                             reply_to_message_id=reply_id
-                        )
-                        await asyncio.sleep(80) 
-                        await nk.delete()
+                        )                      
                 except Exception as e:
                     logger.exception(e)
                 break
