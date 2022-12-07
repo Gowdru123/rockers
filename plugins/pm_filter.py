@@ -55,7 +55,7 @@ async def fil_mod(client, message):
 async def give_filter(client, message):
     k = await manual_filters(client, message)
     k == False:
-        await auto_filter(client, message)
+     await auto_filter(client, message)
 
 @Client.on_callback_query(filters.regex(r"^next"))
 async def next_page(bot, query):
