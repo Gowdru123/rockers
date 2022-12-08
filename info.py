@@ -83,9 +83,3 @@ if SELF_DELETE == "True":
     # Download Tutorial Button #
 DOWNLOAD_TEXT_NAME = "⚡ HOW TO DOWNLOAD ⚡"
 DOWNLOAD_TEXT_URL = "https://t.me/+Rf7HPykmLC5hOWQ9"
-
-   # Custom Caption Under Button #
-CAPTION_BUTTON = "📺 theater print movies"
-CAPTION_BUTTON_URL = "https://t.me/+9NYMiUfQ0RYyOTg1"
-
-   # Auto Delete For Bot Sending Files #
