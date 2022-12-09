@@ -23,10 +23,10 @@ async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [
             [
-                InlineKeyboardButton('⚡ UPDATES ⚡', url='https://t.me/ROCKERSBACKUP')
+                InlineKeyboardButton('📺 𝐑𝐨𝐜𝐤𝐞𝐫 📺', url='https://t.me/+tU8INwk_RbRlYWM1')
             ],
             [
-                InlineKeyboardButton('⚡ OFFICIAL ⚡', url=f"https://t.me/+tU8INwk_RbRlYWM1"),
+                InlineKeyboardButton('🛒 apk games', url=f"https://t.me/+AChJcx5l-jc2NWRl"),
             ],
             [
                 InlineKeyboardButton(text=DOWNLOAD_TEXT_NAME,url=DOWNLOAD_TEXT_URL)
@@ -47,10 +47,10 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('ADD ME TO UR GROUP', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('⚡ OFFICIAL ⚡', url='https://t.me/+tU8INwk_RbRlYWM1'),
-            InlineKeyboardButton('UPDATES ', url='https://t.me/ROCKERSBACKUP')
+            InlineKeyboardButton('📺 𝐑𝐨𝐜𝐤𝐞𝐫 📺', url='https://t.me/+tU8INwk_RbRlYWM1'),
+            InlineKeyboardButton('🛒 apk games ', url='https://t.me/+AChJcx5l-jc2NWRl')
             ],[
-            InlineKeyboardButton('HELP', callback_data='help'),
+            InlineKeyboardButton('🚨 adult channel', url='https://t.me/fuckofficialforu'),
             InlineKeyboardButton('OWNER ', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -93,10 +93,10 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('ADD ME TO UR GROUP', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('⚡ OFFICIAL ⚡', url='https://t.me/+tU8INwk_RbRlYWM1'),
-            InlineKeyboardButton('⚡ UPDATES ⚡ ', url='https://t.me/ROCKERSBACKUP')
+            InlineKeyboardButton('📺 𝐑𝐨𝐜𝐤𝐞𝐫 📺', url='https://t.me/+tU8INwk_RbRlYWM1'),
+            InlineKeyboardButton(' 🛒 apk games ', url='https://t.me/+AChJcx5l-jc2NWRl')
             ],[
-            InlineKeyboardButton('HELP', callback_data='help'),
+            InlineKeyboardButton('🚨 adult channel, url='https://t.me/fuckofficialforu'),
             InlineKeyboardButton('OWNER ', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
