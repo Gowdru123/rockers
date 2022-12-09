@@ -96,7 +96,7 @@ async def start(client, message):
             InlineKeyboardButton('📺 𝐑𝐨𝐜𝐤𝐞𝐫 📺', url='https://t.me/+tU8INwk_RbRlYWM1'),
             InlineKeyboardButton(' 🛒 apk games ', url='https://t.me/+AChJcx5l-jc2NWRl')
             ],[
-            InlineKeyboardButton('🚨 adult channel, url='https://t.me/fuckofficialforu'),
+            InlineKeyboardButton('🚨 adult channel', url='https://t.me/fuckofficialforu'),
             InlineKeyboardButton('OWNER ', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
