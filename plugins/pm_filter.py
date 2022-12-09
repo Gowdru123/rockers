@@ -84,7 +84,7 @@ async def next_page(bot, query):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"[{get_size(file.file_size)}] {file.file_name}", 
+                    text=f"📂[{get_size(file.file_size)}] {file.file_name}", 
                     url=await get_shortlink(f"https://telegram.me/{temp.U_NAME}?start=files_{file.file_id}")
                 ),
             ]
@@ -94,11 +94,11 @@ async def next_page(bot, query):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"[{get_size(file.file_size)}] {file.file_name}", 
+                    text=f"📂[{get_size(file.file_size)}] {file.file_name}", 
                     url=await get_shortlink(f"https://telegram.me/{temp.U_NAME}?start=files_{file.file_id}")
                 ),
                 InlineKeyboardButton(
-                    text=f"[{get_size(file.file_size)}] {file.file_name}", 
+                    text=f"📂[{get_size(file.file_size)}] {file.file_name}", 
                     url=await get_shortlink(f"https://telegram.me/{temp.U_NAME}?start=files_{file.file_id}")
                 ),
             ]
@@ -164,7 +164,7 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
         else:
-            k = await query.message.edit('𝚃𝙷𝙸𝚂 𝙼𝙾𝚅𝙸𝙴 I𝚂 𝙽𝙾𝚃 𝚈𝙴𝚃 𝚁𝙴𝙻𝙴𝙰𝚂𝙴𝙳 𝙾𝚁 𝙰𝙳𝙳𝙴𝙳 𝚃𝙾 𝙳𝙰𝚃𝚂𝙱𝙰𝚂𝙴 ')
+            k = await query.message.edit('𝚃𝙷𝙸𝚂 𝙼𝙾𝚅𝙸𝙴 I𝚂 𝙽𝙾𝚃 𝚈𝙴𝚃 𝚁𝙴𝙻𝙴𝙰𝚂𝙴𝙳 𝙾𝚁 𝙰𝙳𝙳𝙴𝙳 𝚃𝙾 𝙳𝙰𝚃𝚂𝙱𝙰𝚂𝙴 𝐖𝐡𝐞𝐧 𝐮𝐫 𝐦𝐨𝐯𝐢𝐞𝐬 𝐚𝐯𝐚𝐢𝐥𝐚𝐛𝐥𝐞 𝐮𝐩𝐥𝐨𝐚𝐝𝐢𝐧𝐠 𝐡𝐞𝐫𝐞 𝐣𝐨𝐢𝐧 :- https://t.me/+tU8INwk_RbRlYWM1 ')
             await asyncio.sleep(10)
             await k.delete()
 
@@ -744,7 +744,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"\n<b>🔖𝐇𝐞𝐲 <b> {message.from_user.mention}\n\n𝐘𝐨𝐮𝐫 𝐚𝐬𝐤𝐞𝐝 𝐦𝐨𝐯𝐢𝐞:- {search}\n\n<b>🏷 𝐚𝐥𝐥 𝐚𝐯𝐚𝐢𝐥𝐚𝐛𝐥𝐞 𝐪𝐮𝐚𝐥𝐢𝐭𝐲 𝐥𝐚𝐧𝐠𝐮𝐚𝐠𝐞 𝐟𝐢𝐥𝐞𝐬 𝐮𝐩𝐥𝐨𝐚𝐝𝐞𝐝...\n\n📺 𝐇𝐨𝐰  𝐭𝐨 𝐝𝐨𝐰𝐧𝐥𝐨𝐚𝐝 📺 https://t.me/+Rf7HPykmLC5hOWQ9\n" 
+        cap = f"\n<b>🔖𝐇𝐞𝐲 <b> {message.from_user.mention}\n\n𝐘𝐨𝐮𝐫 𝐚𝐬𝐤𝐞𝐝 𝐦𝐨𝐯𝐢𝐞📺:- {search}\n\n<b>🧮 𝐚𝐥𝐥 𝐚𝐯𝐚𝐢𝐥𝐚𝐛𝐥𝐞 𝐪𝐮𝐚𝐥𝐢𝐭𝐲 𝐥𝐚𝐧𝐠𝐮𝐚𝐠𝐞 𝐟𝐢𝐥𝐞𝐬 𝐮𝐩𝐥𝐨𝐚𝐝𝐞𝐝...\n\n📺 𝐑𝐨𝐜𝐤𝐞𝐫'𝐬 𝐨𝐟𝐟𝐢𝐜𝐢𝐚𝐥 📺 \n" 
     if imdb and imdb.get('poster'):
     
         try:
@@ -811,7 +811,7 @@ async def advantage_spell_chok(msg):
     movielist += [(re.sub(r'(\-|\(|\)|_)', '', i, flags=re.IGNORECASE)).strip() for i in gs_parsed]
     movielist = list(dict.fromkeys(movielist))  # removing duplicates
     if not movielist:
-        k = await msg.reply("Check Spelling On** [Google](http://www.google.com/search?q={event.text.replace(' ', '%20')}%20Movie) 🔍 ")
+        k = await msg.reply("𝐨𝐧𝐥𝐲 𝐭𝐲𝐩𝐞 𝐜𝐨𝐫𝐫𝐞𝐜𝐭 𝐦𝐨𝐯𝐢𝐞 𝐧𝐚𝐦𝐞 𝐰𝐢𝐭𝐡 𝐲𝐞𝐚𝐫")
         await asyncio.sleep(8)
         await k.delete()
         return
@@ -823,7 +823,7 @@ async def advantage_spell_chok(msg):
         )
     ] for k, movie in enumerate(movielist)]
     btn.append([InlineKeyboardButton(text="Close", callback_data=f'spolling#{user}#close_spellcheck')])
-    pp = await msg.reply("I couldn't find anything related to that\nonly type correct movie name with year\nDid you mean any one of these below select?",reply_markup=InlineKeyboardMarkup(btn))                   
+    pp = await msg.reply("𝐈 𝐜𝐨𝐮𝐥𝐝𝐧'𝐭 𝐟𝐢𝐧𝐝 𝐚𝐧𝐲𝐭𝐡𝐢𝐧𝐠 𝐫𝐞𝐥𝐚𝐭𝐞𝐝 𝐭𝐨 𝐭𝐡𝐚𝐭\n𝐨𝐧𝐥𝐲 𝐭𝐲𝐩𝐞 𝐜𝐨𝐫𝐫𝐞𝐜𝐭 𝐦𝐨𝐯𝐢𝐞 𝐧𝐚𝐦𝐞 𝐰𝐢𝐭𝐡 𝐲𝐞𝐚𝐫\n\n𝐖𝐡𝐞𝐧 𝐮𝐫 𝐦𝐨𝐯𝐢𝐞𝐬 𝐚𝐯𝐚𝐢𝐥𝐚𝐛𝐥𝐞 𝐮𝐩𝐥𝐨𝐚𝐝𝐢𝐧𝐠 𝐡𝐞𝐫𝐞 𝐣𝐨𝐢𝐧\n\n𝐑𝐨𝐜𝐤𝐞𝐫'𝐬 𝐨𝐟𝐟𝐢𝐜𝐢𝐚𝐥 :- https://t.me/+tU8INwk_RbRlYWM1\n𝐃𝐢𝐝 𝐲𝐨𝐮 𝐦𝐞𝐚𝐧 𝐚𝐧𝐲 𝐨𝐧𝐞 𝐨𝐟 𝐭𝐡𝐞𝐬𝐞 𝐛𝐞𝐥𝐨𝐰 𝐬𝐞𝐥𝐞𝐜𝐭?",reply_markup=InlineKeyboardMarkup(btn))                   
     await asyncio.sleep(30)
     await pp.delete()
 
