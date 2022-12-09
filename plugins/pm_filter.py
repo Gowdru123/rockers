@@ -435,8 +435,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('ADD ME TO URGROUP', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
         ], [
-            InlineKeyboardButton('𝐑𝐨𝐜𝐤𝐞𝐫'𝐬 𝐨𝐟𝐟𝐢𝐜𝐢𝐚𝐥', url=f'https://t.me/+tU8INwk_RbRlYWM1'),
-            InlineKeyboardButton('BOT OWNER ', url='https://t.me/Beastonejnanesh')    
+            InlineKeyboardButton('📺 𝐑𝐨𝐜𝐤𝐞𝐫 📺', url='https://t.me/+tU8INwk_RbRlYWM1'),
+            InlineKeyboardButton('BOT OWNER', url='https://t.me/Beastonejnanesh')    
         ], [
             InlineKeyboardButton('🛒 apk games ', url=f'https://t.me/+AChJcx5l-jc2NWRl'),
             InlineKeyboardButton('🚨 adult channel', url=f'https://t.me/fuckofficialforu')
