@@ -705,6 +705,10 @@ async def auto_filter(client, msg, spoll=False):
         btn.append(
             [InlineKeyboardButton(text="🗓 1/1", callback_data="pages")]
         )
+    btn.insert(0,
+        [ 
+            InlineKeyboardButton(text="📺 𝐇𝐨𝐰  𝐭𝐨 𝐝𝐨𝐰𝐧𝐥𝐨𝐚𝐝 📺", url="https://t.me/+Rf7HPykmLC5hOWQ9")]
+        )  
     imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
     TEMPLATE = settings['template']
     if imdb:
@@ -740,7 +744,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"\n<b>🔖𝐇𝐞𝐲 <b> {message.from_user.mention}\n\n𝐘𝐨𝐮𝐫 𝐚𝐬𝐤𝐞𝐝 𝐦𝐨𝐯𝐢𝐞:- {search}\n\n<b>🏷 𝐚𝐥𝐥 𝐚𝐯𝐚𝐢𝐥𝐚𝐛𝐥𝐞 𝐪𝐮𝐚𝐥𝐢𝐭𝐲 𝐥𝐚𝐧𝐠𝐮𝐚𝐠𝐞 𝐟𝐢𝐥𝐞𝐬 𝐮𝐩𝐥𝐨𝐚𝐝𝐞𝐝...\n" 
+        cap = f"\n<b>🔖𝐇𝐞𝐲 <b> {message.from_user.mention}\n\n𝐘𝐨𝐮𝐫 𝐚𝐬𝐤𝐞𝐝 𝐦𝐨𝐯𝐢𝐞:- {search}\n\n<b>🏷 𝐚𝐥𝐥 𝐚𝐯𝐚𝐢𝐥𝐚𝐛𝐥𝐞 𝐪𝐮𝐚𝐥𝐢𝐭𝐲 𝐥𝐚𝐧𝐠𝐮𝐚𝐠𝐞 𝐟𝐢𝐥𝐞𝐬 𝐮𝐩𝐥𝐨𝐚𝐝𝐞𝐝...\n\n📺 𝐇𝐨𝐰  𝐭𝐨 𝐝𝐨𝐰𝐧𝐥𝐨𝐚𝐝 📺 https://t.me/+Rf7HPykmLC5hOWQ9\n" 
     if imdb and imdb.get('poster'):
     
         try:
