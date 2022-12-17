@@ -45,12 +45,12 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('ADD ME TO UR GROUP', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('𝐌𝐗-𝐏𝐋𝐀𝐘𝐄𝐑 𝐌𝐎𝐕𝐈𝐄 📡', url=f'https://t.me/+tU8INwk_RbRlYWM1')
             ],[
             InlineKeyboardButton('📺 𝐑𝐨𝐜𝐤𝐞𝐫 📺', url='https://t.me/+tU8INwk_RbRlYWM1'),
             InlineKeyboardButton('🛒 apk games ', url='https://t.me/+AChJcx5l-jc2NWRl')
             ],[
-            InlineKeyboardButton('🚨 adult channel', url='https://t.me/fuckofficialforu'),
+            InlineKeyboardButton('𝐓𝐇𝐄𝐀𝐓𝐄𝐑 𝐏𝐑𝐈𝐍𝐓 🎬', url='https://t.me/+9NYMiUfQ0RYyOTg1'),
             InlineKeyboardButton('OWNER ', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -91,12 +91,12 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('ADD ME TO UR GROUP', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('𝐌𝐗-𝐏𝐋𝐀𝐘𝐄𝐑 𝐌𝐎𝐕𝐈𝐄 📡', url=f'https://t.me/+tU8INwk_RbRlYWM1')
             ],[
             InlineKeyboardButton('📺 𝐑𝐨𝐜𝐤𝐞𝐫 📺', url='https://t.me/+tU8INwk_RbRlYWM1'),
             InlineKeyboardButton(' 🛒 apk games ', url='https://t.me/+AChJcx5l-jc2NWRl')
             ],[
-            InlineKeyboardButton('🚨 adult channel', url='https://t.me/fuckofficialforu'),
+            InlineKeyboardButton('𝐓𝐇𝐄𝐀𝐓𝐄𝐑 𝐏𝐑𝐈𝐍𝐓 🎬', url='https://t.me/+9NYMiUfQ0RYyOTg1'),
             InlineKeyboardButton('OWNER ', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
