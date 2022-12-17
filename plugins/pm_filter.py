@@ -433,13 +433,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('ADD ME TO URGROUP', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('𝐌𝐗-𝐏𝐋𝐀𝐘𝐄𝐑 𝐌𝐎𝐕𝐈𝐄 📡', url=f'https://t.me/+tU8INwk_RbRlYWM1')
         ], [
             InlineKeyboardButton('📺 𝐑𝐨𝐜𝐤𝐞𝐫 📺', url='https://t.me/+tU8INwk_RbRlYWM1'),
             InlineKeyboardButton('BOT OWNER', url='https://t.me/Beastonejnanesh')    
         ], [
             InlineKeyboardButton('🛒 apk games ', url=f'https://t.me/+AChJcx5l-jc2NWRl'),
-            InlineKeyboardButton('🚨 adult channel', url=f'https://t.me/fuckofficialforu')
+            InlineKeyboardButton('𝐓𝐇𝐄𝐀𝐓𝐄𝐑 𝐏𝐑𝐈𝐍𝐓 🎬', url=f'https://t.me/+9NYMiUfQ0RYyOTg1')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -665,7 +665,7 @@ async def auto_filter(client, msg, spoll=False):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"[{get_size(file.file_size)}] {file.file_name}", 
+                    text=f"📂[{get_size(file.file_size)}] {file.file_name}", 
                     url=await get_shortlink(f"https://telegram.me/{temp.U_NAME}?start=files_{file.file_id}")
                 ),
             ]
@@ -675,11 +675,11 @@ async def auto_filter(client, msg, spoll=False):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"[{get_size(file.file_size)}] {file.file_name}", 
+                    text=f"📂[{get_size(file.file_size)}] {file.file_name}", 
                     url=await get_shortlink(f"https://telegram.me/{temp.U_NAME}?start=files_{file.file_id}")
                 ),
                 InlineKeyboardButton(
-                    text=f"[{get_size(file.file_size)}] {file.file_name}", 
+                    text=f"📂[{get_size(file.file_size)}] {file.file_name}", 
                     url=await get_shortlink(f"https://telegram.me/{temp.U_NAME}?start=files_{file.file_id}")
                 ),
             ]
