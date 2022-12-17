@@ -107,8 +107,8 @@ async def next_page(bot, query):
 
     btn.insert(0,
         [
-            InlineKeyboardButton(text="ROCKERS OFFICIAL ©️", url="https://t.me/+tU8INwk_RbRlYWM1"), 
-            InlineKeyboardButton(text="🔞 adult channel", url="https://t.me/fuckofficialforu")
+            InlineKeyboardButton(text="𝐌𝐗-𝐏𝐋𝐀𝐘𝐄𝐑 𝐌𝐎𝐕𝐈𝐄 📡", url="https://t.me/+tU8INwk_RbRlYWM1"), 
+            InlineKeyboardButton(text="𝐓𝐇𝐄𝐀𝐓𝐄𝐑 𝐏𝐑𝐈𝐍𝐓  🎬", url="https://t.me/+9NYMiUfQ0RYyOTg1")
         ]
     )
 
@@ -688,8 +688,8 @@ async def auto_filter(client, msg, spoll=False):
 
     btn.insert(0,
         [
-            InlineKeyboardButton(text="ROCKERS OFFICIAL ©️", url="https://t.me/+tU8INwk_RbRlYWM1"), 
-            InlineKeyboardButton(text="🔞 adult channel", url="https://t.me/fuckofficialforu")
+            InlineKeyboardButton(text="𝐌𝐗-𝐏𝐋𝐀𝐘𝐄𝐑 𝐌𝐎𝐕𝐈𝐄 📡", url="https://t.me/+tU8INwk_RbRlYWM1"), 
+            InlineKeyboardButton(text="𝐓𝐇𝐄𝐀𝐓𝐄𝐑 𝐏𝐑𝐈𝐍𝐓  🎬", url="https://t.me/+9NYMiUfQ0RYyOTg1")
         ]
     )
 
@@ -744,7 +744,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"\n<b>🔖𝐇𝐞𝐲 <b> {message.from_user.mention}\n\n𝐘𝐨𝐮𝐫 𝐚𝐬𝐤𝐞𝐝 𝐦𝐨𝐯𝐢𝐞📺:- {search}\n\n<b>🧮 𝐚𝐥𝐥 𝐚𝐯𝐚𝐢𝐥𝐚𝐛𝐥𝐞 𝐪𝐮𝐚𝐥𝐢𝐭𝐲 𝐥𝐚𝐧𝐠𝐮𝐚𝐠𝐞 𝐟𝐢𝐥𝐞𝐬 𝐮𝐩𝐥𝐨𝐚𝐝𝐞𝐝...\n\n📺 𝐑𝐨𝐜𝐤𝐞𝐫'𝐬 𝐨𝐟𝐟𝐢𝐜𝐢𝐚𝐥 📺 \n" 
+        cap = f"\n<b>🔖𝐇𝐞𝐲 <b> {message.from_user.mention}\n\n𝐘𝐨𝐮𝐫 𝐚𝐬𝐤𝐞𝐝 𝐦𝐨𝐯𝐢𝐞 📺:- {search}\n\n<b>🧮 𝐚𝐥𝐥 𝐚𝐯𝐚𝐢𝐥𝐚𝐛𝐥𝐞 𝐪𝐮𝐚𝐥𝐢𝐭𝐲 𝐥𝐚𝐧𝐠𝐮𝐚𝐠𝐞 𝐟𝐢𝐥𝐞𝐬 𝐮𝐩𝐥𝐨𝐚𝐝𝐞𝐝...\n\n📺 𝐑𝐨𝐜𝐤𝐞𝐫'𝐬 𝐨𝐟𝐟𝐢𝐜𝐢𝐚𝐥 📺 \n" 
     if imdb and imdb.get('poster'):
     
         try:
