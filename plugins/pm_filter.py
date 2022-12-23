@@ -850,7 +850,7 @@ async def manual_filters(client, message, text=False):
                                 disable_web_page_preview=True,
                                 reply_to_message_id=reply_id
                           )   
-                          await asyncio.sleep(20) 
+                          await asyncio.sleep(50) 
                           await knd3.delete()                
                         else:
                             button = eval(btn)
@@ -861,7 +861,7 @@ async def manual_filters(client, message, text=False):
                                 reply_markup=InlineKeyboardMarkup(button),
                                 reply_to_message_id=reply_id
                             ) 
-                            await asyncio.sleep(20) 
+                            await asyncio.sleep(50) 
                             await knd2.delete() 
                     elif btn == "[]":
                         knd1 = await client.send_cached_media(
@@ -870,7 +870,7 @@ async def manual_filters(client, message, text=False):
                             caption=reply_text or "",
                             reply_to_message_id=reply_id
                         ) 
-                        await asyncio.sleep(20) 
+                        await asyncio.sleep(50) 
                         await knd1.delete() 
                     else:
                         button = eval(btn)
@@ -880,7 +880,7 @@ async def manual_filters(client, message, text=False):
                             reply_markup=InlineKeyboardMarkup(button),
                             reply_to_message_id=reply_id
                         )  
-                        await asyncio.sleep(20) 
+                        await asyncio.sleep(50) 
                         await knd.delete() 
                 except Exception as e:
                     logger.exception(e)
