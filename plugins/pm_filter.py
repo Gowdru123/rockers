@@ -84,7 +84,7 @@ async def next_page(bot, query):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"📂[{get_size(file.file_size)}] {file.file_name}", 
+                    text=f"[{get_size(file.file_size)}] {file.file_name}", 
                     url=await get_shortlink(f"https://telegram.me/{temp.U_NAME}?start=files_{file.file_id}")
                 ),
             ]
@@ -94,23 +94,17 @@ async def next_page(bot, query):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"📂[{get_size(file.file_size)}] {file.file_name}", 
+                    text=f"[{get_size(file.file_size)}] {file.file_name}", 
                     url=await get_shortlink(f"https://telegram.me/{temp.U_NAME}?start=files_{file.file_id}")
                 ),
                 InlineKeyboardButton(
-                    text=f"📂[{get_size(file.file_size)}] {file.file_name}", 
+                    text=f"[{get_size(file.file_size)}] {file.file_name}", 
                     url=await get_shortlink(f"https://telegram.me/{temp.U_NAME}?start=files_{file.file_id}")
                 ),
             ]
             for file in files
         ]
 
-    btn.insert(0,
-        [
-            InlineKeyboardButton(text="𝐌𝐗-𝐏𝐋𝐀𝐘𝐄𝐑 𝐌𝐎𝐕𝐈𝐄 📡", url="https://t.me/+tU8INwk_RbRlYWM1"), 
-            InlineKeyboardButton(text="𝐓𝐇𝐄𝐀𝐓𝐄𝐑 𝐏𝐑𝐈𝐍𝐓  🎬", url="https://t.me/+9NYMiUfQ0RYyOTg1")
-        ]
-    )
 
     if 0 < offset <= 10:
         off_set = 0
@@ -665,7 +659,7 @@ async def auto_filter(client, msg, spoll=False):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"📂[{get_size(file.file_size)}] {file.file_name}", 
+                    text=f"[{get_size(file.file_size)}] {file.file_name}", 
                     url=await get_shortlink(f"https://telegram.me/{temp.U_NAME}?start=files_{file.file_id}")
                 ),
             ]
@@ -675,23 +669,17 @@ async def auto_filter(client, msg, spoll=False):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"📂[{get_size(file.file_size)}] {file.file_name}", 
+                    text=f"[{get_size(file.file_size)}] {file.file_name}", 
                     url=await get_shortlink(f"https://telegram.me/{temp.U_NAME}?start=files_{file.file_id}")
                 ),
                 InlineKeyboardButton(
-                    text=f"📂[{get_size(file.file_size)}] {file.file_name}", 
+                    text=f"[{get_size(file.file_size)}] {file.file_name}", 
                     url=await get_shortlink(f"https://telegram.me/{temp.U_NAME}?start=files_{file.file_id}")
                 ),
             ]
             for file in files
         ]
 
-    btn.insert(0,
-        [
-            InlineKeyboardButton(text="𝐌𝐗-𝐏𝐋𝐀𝐘𝐄𝐑 𝐌𝐎𝐕𝐈𝐄 📡", url="https://t.me/+tU8INwk_RbRlYWM1"), 
-            InlineKeyboardButton(text="𝐓𝐇𝐄𝐀𝐓𝐄𝐑 𝐏𝐑𝐈𝐍𝐓  🎬", url="https://t.me/+9NYMiUfQ0RYyOTg1")
-        ]
-    )
 
     if offset != "":
         key = f"{message.chat.id}-{message.id}"
@@ -707,7 +695,7 @@ async def auto_filter(client, msg, spoll=False):
         )
     btn.insert(0,
         [ 
-            InlineKeyboardButton(text="📺 𝐇𝐨𝐰  𝐭𝐨 𝐝𝐨𝐰𝐧𝐥𝐨𝐚𝐝 📺", url="https://t.me/+Rf7HPykmLC5hOWQ9")]
+            InlineKeyboardButton(text="📡 𝐇𝐨𝐰  𝐭𝐨 𝐝𝐨𝐰𝐧𝐥𝐨𝐚𝐝 📡", url="https://t.me/+Rf7HPykmLC5hOWQ9")]
         )  
     imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
     TEMPLATE = settings['template']
