@@ -50,7 +50,7 @@ async def start(client, message):
             InlineKeyboardButton('📺 𝐑𝐨𝐜𝐤𝐞𝐫 📺', url='https://t.me/+tU8INwk_RbRlYWM1'),
             InlineKeyboardButton('🛒 apk games ', url='https://t.me/+AChJcx5l-jc2NWRl')
             ],[
-            InlineKeyboardButton('𝐓𝐇𝐄𝐀𝐓𝐄𝐑 𝐏𝐑𝐈𝐍𝐓 🎬', url='https://t.me/+9NYMiUfQ0RYyOTg1'),
+            InlineKeyboardButton('𝐓𝐇𝐄𝐀𝐓𝐄𝐑 𝐏𝐑𝐈𝐍𝐓 🎬', url='https://t.me/+4FTdhkluUPs0Zjc1'),
             InlineKeyboardButton('OWNER ', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -96,7 +96,7 @@ async def start(client, message):
             InlineKeyboardButton('📺 𝐑𝐨𝐜𝐤𝐞𝐫 📺', url='https://t.me/+tU8INwk_RbRlYWM1'),
             InlineKeyboardButton(' 🛒 apk games ', url='https://t.me/+AChJcx5l-jc2NWRl')
             ],[
-            InlineKeyboardButton('𝐓𝐇𝐄𝐀𝐓𝐄𝐑 𝐏𝐑𝐈𝐍𝐓 🎬', url='https://t.me/+9NYMiUfQ0RYyOTg1'),
+            InlineKeyboardButton('𝐓𝐇𝐄𝐀𝐓𝐄𝐑 𝐏𝐑𝐈𝐍𝐓 🎬', url='https://t.me/+4FTdhkluUPs0Zjc1'),
             InlineKeyboardButton('OWNER ', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -247,7 +247,7 @@ async def start(client, message):
         chat_id=message.from_user.id,
         file_id=file_id,
         caption=f_caption,
-        reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('📺theater', url='https://t.me/+9NYMiUfQ0RYyOTg1') ] ] ),
+        reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('📺theater', url='https://t.me/+4FTdhkluUPs0Zjc1') ] ] ),
         protect_content=True if pre == 'filep' else False,
         )
                     
