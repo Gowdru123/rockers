@@ -433,7 +433,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('BOT OWNER', url='https://t.me/Beastonejnanesh')    
         ], [
             InlineKeyboardButton('🛒 apk games ', url=f'https://t.me/+AChJcx5l-jc2NWRl'),
-            InlineKeyboardButton('𝐓𝐇𝐄𝐀𝐓𝐄𝐑 𝐏𝐑𝐈𝐍𝐓 🎬', url=f'https://t.me/+9NYMiUfQ0RYyOTg1')
+            InlineKeyboardButton('𝐓𝐇𝐄𝐀𝐓𝐄𝐑 𝐏𝐑𝐈𝐍𝐓 🎬', url=f'https://t.me/+4FTdhkluUPs0Zjc1')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
