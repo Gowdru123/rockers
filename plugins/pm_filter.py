@@ -695,7 +695,9 @@ async def auto_filter(client, msg, spoll=False):
         )
     btn.insert(0,
         [ 
-            InlineKeyboardButton(text="📡 𝐇𝐨𝐰  𝐭𝐨 𝐝𝐨𝐰𝐧𝐥𝐨𝐚𝐝 📡", url="https://t.me/+Rf7HPykmLC5hOWQ9")]
+            InlineKeyboardButton(text="📡 𝐇𝐨𝐰  𝐭𝐨 𝐝𝐨𝐰𝐧𝐥𝐨𝐚𝐝 📡", url="https://t.me/+Rf7HPykmLC5hOWQ9"),
+            InlineKeyboardButton(text="📢 𝗧𝗵𝗲𝗮𝘁𝗲𝗿 𝗽𝗿𝗶𝗻𝘁 𝗺𝗼𝘃𝗶𝗲𝘀", url="https://t.me/+4FTdhkluUPs0Zjc1")
+        ]
         )  
     imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
     TEMPLATE = settings['template']
@@ -838,7 +840,7 @@ async def manual_filters(client, message, text=False):
                                 disable_web_page_preview=True,
                                 reply_to_message_id=reply_id
                           )   
-                          await asyncio.sleep(50) 
+                          await asyncio.sleep(30) 
                           await knd3.delete()                
                         else:
                             button = eval(btn)
@@ -849,7 +851,7 @@ async def manual_filters(client, message, text=False):
                                 reply_markup=InlineKeyboardMarkup(button),
                                 reply_to_message_id=reply_id
                             ) 
-                            await asyncio.sleep(50) 
+                            await asyncio.sleep(30) 
                             await knd2.delete() 
                     elif btn == "[]":
                         knd1 = await client.send_cached_media(
@@ -858,7 +860,7 @@ async def manual_filters(client, message, text=False):
                             caption=reply_text or "",
                             reply_to_message_id=reply_id
                         ) 
-                        await asyncio.sleep(50) 
+                        await asyncio.sleep(30) 
                         await knd1.delete() 
                     else:
                         button = eval(btn)
@@ -868,7 +870,7 @@ async def manual_filters(client, message, text=False):
                             reply_markup=InlineKeyboardMarkup(button),
                             reply_to_message_id=reply_id
                         )  
-                        await asyncio.sleep(50) 
+                        await asyncio.sleep(30) 
                         await knd.delete() 
                 except Exception as e:
                     logger.exception(e)
