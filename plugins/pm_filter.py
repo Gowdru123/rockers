@@ -85,7 +85,7 @@ async def next_page(bot, query):
             [
                 InlineKeyboardButton(
                     text=f"[{get_size(file.file_size)}] {file.file_name}", 
-                    url=await get_shortlink(f"http://telegram.dog/{temp.U_NAME}?start=files_{file.file_id}")
+                    url=await get_shortlink(f"http://telegram.me/{temp.U_NAME}?start=files_{file.file_id}")
                 ),
             ]
             for file in files
@@ -95,11 +95,11 @@ async def next_page(bot, query):
             [
                 InlineKeyboardButton(
                     text=f"[{get_size(file.file_size)}] {file.file_name}", 
-                    url=await get_shortlink(f"http://telegram.dog/{temp.U_NAME}?start=files_{file.file_id}")
+                    url=await get_shortlink(f"http://telegram.me/{temp.U_NAME}?start=files_{file.file_id}")
                 ),
                 InlineKeyboardButton(
                     text=f"[{get_size(file.file_size)}] {file.file_name}", 
-                    url=await get_shortlink(f"http://telegram.dog/{temp.U_NAME}?start=files_{file.file_id}")
+                    url=await get_shortlink(f"http://telegram.me/{temp.U_NAME}?start=files_{file.file_id}")
                 ),
             ]
             for file in files
@@ -375,10 +375,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
         try:
             if AUTH_CHANNEL and not await is_subscribed(client, query):
-                await query.answer(url=f"http://telegram.dog/{temp.U_NAME}?start={ident}_{file_id}")
+                await query.answer(url=f"http://telegram.me/{temp.U_NAME}?start={ident}_{file_id}")
                 return
             elif settings['botpm']:
-                await query.answer(url=f"http://telegram.dog/{temp.U_NAME}?start={ident}_{file_id}")
+                await query.answer(url=f"http://telegram.me/{temp.U_NAME}?start={ident}_{file_id}")
                 return
             else:
                 await client.send_cached_media(
@@ -391,9 +391,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
         except UserIsBlocked:
             await query.answer('You Are Blocked to use me !', show_alert=True)
         except PeerIdInvalid:
-            await query.answer(url=f"http://telegram.dog/{temp.U_NAME}?start={ident}_{file_id}")
+            await query.answer(url=f"http://telegram.me/{temp.U_NAME}?start={ident}_{file_id}")
         except Exception as e:
-            await query.answer(url=f"http://telegram.dog/{temp.U_NAME}?start={ident}_{file_id}")
+            await query.answer(url=f"http://telegram.me/{temp.U_NAME}?start={ident}_{file_id}")
     elif query.data.startswith("checksub"):
         if AUTH_CHANNEL and not await is_subscribed(client, query):
             await query.answer("I Like Your Smartness, But Don't Be Oversmart Okay 😒", show_alert=True)
@@ -427,13 +427,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('𝐌𝐗-𝐏𝐋𝐀𝐘𝐄𝐑 𝐌𝐎𝐕𝐈𝐄 📡', url=f'http://telegram.dog/+tU8INwk_RbRlYWM1')
+            InlineKeyboardButton('𝐌𝐗-𝐏𝐋𝐀𝐘𝐄𝐑 𝐌𝐎𝐕𝐈𝐄 📡', url=f'http://telegram.me/+tU8INwk_RbRlYWM1')
         ], [
-            InlineKeyboardButton('📺 𝐑𝐨𝐜𝐤𝐞𝐫 📺', url='http://telegram.dog/+tU8INwk_RbRlYWM1'),
-            InlineKeyboardButton('BOT OWNER', url='http://telegram.dog/Beastonejnanesh')    
+            InlineKeyboardButton('📺 𝐑𝐨𝐜𝐤𝐞𝐫 📺', url='http://telegram.me/+tU8INwk_RbRlYWM1'),
+            InlineKeyboardButton('BOT OWNER', url='http://telegram.me/Beastonejnanesh')    
         ], [
-            InlineKeyboardButton('🛒 apk games ', url=f'http://telegram.dog/+AChJcx5l-jc2NWRl'),
-            InlineKeyboardButton('𝐓𝐇𝐄𝐀𝐓𝐄𝐑 𝐏𝐑𝐈𝐍𝐓 🎬', url=f'http://telegram.dog/+4FTdhkluUPs0Zjc1')
+            InlineKeyboardButton('🛒 apk games ', url=f'http://telegram.me/+AChJcx5l-jc2NWRl'),
+            InlineKeyboardButton('𝐓𝐇𝐄𝐀𝐓𝐄𝐑 𝐏𝐑𝐈𝐍𝐓 🎬', url=f'http://telegram.me/+4FTdhkluUPs0Zjc1')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -660,7 +660,7 @@ async def auto_filter(client, msg, spoll=False):
             [
                 InlineKeyboardButton(
                     text=f"[{get_size(file.file_size)}] {file.file_name}", 
-                    url=await get_shortlink(f"http://telegram.dog/{temp.U_NAME}?start=files_{file.file_id}")
+                    url=await get_shortlink(f"http://telegram.me/{temp.U_NAME}?start=files_{file.file_id}")
                 ),
             ]
             for file in files
@@ -670,11 +670,11 @@ async def auto_filter(client, msg, spoll=False):
             [
                 InlineKeyboardButton(
                     text=f"[{get_size(file.file_size)}] {file.file_name}", 
-                    url=await get_shortlink(f"http://telegram.dog/{temp.U_NAME}?start=files_{file.file_id}")
+                    url=await get_shortlink(f"http://telegram.me/{temp.U_NAME}?start=files_{file.file_id}")
                 ),
                 InlineKeyboardButton(
                     text=f"[{get_size(file.file_size)}] {file.file_name}", 
-                    url=await get_shortlink(f"http://telegram.dog/{temp.U_NAME}?start=files_{file.file_id}")
+                    url=await get_shortlink(f"http://telegram.me/{temp.U_NAME}?start=files_{file.file_id}")
                 ),
             ]
             for file in files
@@ -695,8 +695,8 @@ async def auto_filter(client, msg, spoll=False):
         )
     btn.insert(0,
         [ 
-            InlineKeyboardButton(text="📡 𝐇𝐨𝐰  𝐭𝐨 𝐝𝐨𝐰𝐧𝐥𝐨𝐚𝐝 📡", url="http://telegram.dog/+Rf7HPykmLC5hOWQ9"),
-            InlineKeyboardButton(text="📢 𝗧𝗵𝗲𝗮𝘁𝗲𝗿 𝗽𝗿𝗶𝗻𝘁 𝗺𝗼𝘃𝗶𝗲𝘀", url="http://telegram.dog/+4FTdhkluUPs0Zjc1")
+            InlineKeyboardButton(text="📡 𝐇𝐨𝐰  𝐭𝐨 𝐝𝐨𝐰𝐧𝐥𝐨𝐚𝐝 📡", url="http://telegram.me/+Rf7HPykmLC5hOWQ9"),
+            InlineKeyboardButton(text="📢 𝗧𝗵𝗲𝗮𝘁𝗲𝗿 𝗽𝗿𝗶𝗻𝘁 𝗺𝗼𝘃𝗶𝗲𝘀", url="http://telegram.me/+4FTdhkluUPs0Zjc1")
         ]
         )  
     imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
