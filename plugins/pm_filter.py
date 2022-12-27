@@ -158,7 +158,7 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
         else:
-            k = await query.message.edit('𝚃𝙷𝙸𝚂 𝙼𝙾𝚅𝙸𝙴 I𝚂 𝙽𝙾𝚃 𝚈𝙴𝚃 𝚁𝙴𝙻𝙴𝙰𝚂𝙴𝙳 𝙾𝚁 𝙰𝙳𝙳𝙴𝙳 𝚃𝙾 𝙳𝙰𝚃𝚂𝙱𝙰𝚂𝙴 𝐖𝐡𝐞𝐧 𝐮𝐫 𝐦𝐨𝐯𝐢𝐞𝐬 𝐚𝐯𝐚𝐢𝐥𝐚𝐛𝐥𝐞 𝐮𝐩𝐥𝐨𝐚𝐝𝐢𝐧𝐠 𝐡𝐞𝐫𝐞 𝐣𝐨𝐢𝐧')
+            k = await query.message.edit('𝚃𝙷𝙸𝚂 𝙼𝙾𝚅𝙸𝙴 I𝚂 𝙽𝙾𝚃 𝚈𝙴𝚃 𝚁𝙴𝙻𝙴𝙰𝚂𝙴𝙳 𝙾𝚁 𝙰𝙳𝙳𝙴𝙳 𝚃𝙾 𝙳𝙰𝚃𝚂𝙱𝙰𝚂𝙴/n/n<a href=https://t.me/+tU8INwk_RbRlYWM1><b>📡 𝑅𝑂𝐶𝐾𝐸𝑅'𝑆 𝑂𝐹𝐹𝐼𝐶𝐼𝐴𝐿</b></a>\n')
             await asyncio.sleep(10)
             await k.delete()
 
@@ -734,7 +734,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"{search}" 
+        cap = f"💎 {u.mention} 𝗨𝗥 𝗥𝗘𝗤𝗨𝗘𝗦𝗧𝗘𝗗 𝗠𝗢𝗩𝗜𝗘 " {search} "" 
     if imdb and imdb.get('poster'):
     
         try:
@@ -772,7 +772,7 @@ async def advantage_spell_chok(msg):
     g_s += await search_gagala(msg.text)
     gs_parsed = []
     if not g_s:
-        k = await msg.reply("I couldn't find any movie in that name.")
+        k = await msg.reply("{u.mention} I couldn't find any movie in that name.")
         await asyncio.sleep(8)
         await k.delete()
         return
@@ -801,7 +801,7 @@ async def advantage_spell_chok(msg):
     movielist += [(re.sub(r'(\-|\(|\)|_)', '', i, flags=re.IGNORECASE)).strip() for i in gs_parsed]
     movielist = list(dict.fromkeys(movielist))  # removing duplicates
     if not movielist:
-        k = await msg.reply("𝐨𝐧𝐥𝐲 𝐭𝐲𝐩𝐞 𝐜𝐨𝐫𝐫𝐞𝐜𝐭 𝐦𝐨𝐯𝐢𝐞 𝐧𝐚𝐦𝐞 𝐰𝐢𝐭𝐡 𝐲𝐞𝐚𝐫")
+        k = await msg.reply("{u.mention} 𝐨𝐧𝐥𝐲 𝐭𝐲𝐩𝐞 𝐜𝐨𝐫𝐫𝐞𝐜𝐭 𝐦𝐨𝐯𝐢𝐞 𝐧𝐚𝐦𝐞 𝐰𝐢𝐭𝐡 𝐲𝐞𝐚𝐫")
         await asyncio.sleep(8)
         await k.delete()
         return
@@ -812,8 +812,9 @@ async def advantage_spell_chok(msg):
             callback_data=f"spolling#{user}#{k}",
         )
     ] for k, movie in enumerate(movielist)]
-    btn.append([InlineKeyboardButton(text="Close", callback_data=f'spolling#{user}#close_spellcheck')])
-    pp = await msg.reply("𝐈 𝐜𝐨𝐮𝐥𝐝𝐧'𝐭 𝐟𝐢𝐧𝐝 𝐚𝐧𝐲𝐭𝐡𝐢𝐧𝐠 𝐫𝐞𝐥𝐚𝐭𝐞𝐝 𝐭𝐨 𝐭𝐡𝐚𝐭\n𝐨𝐧𝐥𝐲 𝐭𝐲𝐩𝐞 𝐜𝐨𝐫𝐫𝐞𝐜𝐭 𝐦𝐨𝐯𝐢𝐞 𝐧𝐚𝐦𝐞 𝐰𝐢𝐭𝐡 𝐲𝐞𝐚𝐫\n\n𝐖𝐡𝐞𝐧 𝐮𝐫 𝐦𝐨𝐯𝐢𝐞𝐬 𝐚𝐯𝐚𝐢𝐥𝐚𝐛𝐥𝐞 𝐮𝐩𝐥𝐨𝐚𝐝𝐢𝐧𝐠 𝐡𝐞𝐫𝐞 𝐣𝐨𝐢𝐧\n\n𝐑𝐨𝐜𝐤𝐞𝐫'𝐬 𝐨𝐟𝐟𝐢𝐜𝐢𝐚𝐥 :- https://t.me/+tU8INwk_RbRlYWM1\n𝐃𝐢𝐝 𝐲𝐨𝐮 𝐦𝐞𝐚𝐧 𝐚𝐧𝐲 𝐨𝐧𝐞 𝐨𝐟 𝐭𝐡𝐞𝐬𝐞 𝐛𝐞𝐥𝐨𝐰 𝐬𝐞𝐥𝐞𝐜𝐭?",reply_markup=InlineKeyboardMarkup(btn))                   
+    btn.append([InlineKeyboardButton(text="💎 Close 💎", callback_data=f'spolling#{user}#close_spellcheck')])
+    pp = await msg.reply("💎 {u.mention} 𝐂𝐡𝐞𝐜𝐤 𝐮 𝐭𝐲𝐩𝐞𝐝 𝐜𝐨𝐫𝐫𝐞𝐜𝐭 𝐦𝐨𝐯𝐢𝐞 𝐧𝐚𝐦𝐞 💎/n🥏𝐭𝐢𝐩𝐬 :- 𝑂𝑛𝑙𝑦 𝑡𝑦𝑝𝑒 𝑚𝑜𝑣𝑖𝑒 𝑛𝑎𝑚𝑒/n<a href=https://t.me/+tU8INwk_RbRlYWM1><b>📡 𝑅𝑂𝐶𝐾𝐸𝑅'𝑆 𝑂𝐹𝐹𝐼𝐶𝐼𝐴𝐿</b></a>\n")
+    reply_markup=InlineKeyboardMarkup(btn))                   
     await asyncio.sleep(30)
     await pp.delete()
 
