@@ -158,7 +158,7 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
         else:
-            k = await query.message.edit('𝚃𝙷𝙸𝚂 𝙼𝙾𝚅𝙸𝙴 I𝚂 𝙽𝙾𝚃 𝚈𝙴𝚃 𝚁𝙴𝙻𝙴𝙰𝚂𝙴𝙳 𝙾𝚁 𝙰𝙳𝙳𝙴𝙳 𝚃𝙾 𝙳𝙰𝚃𝚂𝙱𝙰𝚂𝙴/n/n<a href=https://t.me/+tU8INwk_RbRlYWM1><b>📡 𝑅𝑂𝐶𝐾𝐸𝑅'𝑆 𝑂𝐹𝐹𝐼𝐶𝐼𝐴𝐿</b></a>\n')
+            k = await query.message.edit('𝚃𝙷𝙸𝚂 𝙼𝙾𝚅𝙸𝙴 I𝚂 𝙽𝙾𝚃 𝚈𝙴𝚃 𝚁𝙴𝙻𝙴𝙰𝚂𝙴𝙳 𝙾𝚁 𝙰𝙳𝙳𝙴𝙳 𝚃𝙾 𝙳𝙰𝚃𝚂𝙱𝙰𝚂𝙴/n/n<a href=https://t.me/+tU8INwk_RbRlYWM1><b>📡 𝑅𝑂𝐶𝐾𝐸𝑅</b></a>\n')
             await asyncio.sleep(10)
             await k.delete()
 
