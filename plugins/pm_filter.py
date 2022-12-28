@@ -734,7 +734,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"💎 from_user.mention 𝗨𝗥 𝗥𝗘𝗤𝗨𝗘𝗦𝗧𝗘𝗗 𝗠𝗢𝗩𝗜𝗘 "{search}" " 
+        cap = f"\n<b>💎<b> {message.from_user.mention}\n 𝗨𝗥 𝗥𝗘𝗤𝗨𝗘𝗦𝗧𝗘𝗗 𝗠𝗢𝗩𝗜𝗘 "{search}" " 
     if imdb and imdb.get('poster'):
     
         try:
@@ -801,7 +801,7 @@ async def advantage_spell_chok(msg):
     movielist += [(re.sub(r'(\-|\(|\)|_)', '', i, flags=re.IGNORECASE)).strip() for i in gs_parsed]
     movielist = list(dict.fromkeys(movielist))  # removing duplicates
     if not movielist:
-        k = await msg.reply("{u.mention} 𝐨𝐧𝐥𝐲 𝐭𝐲𝐩𝐞 𝐜𝐨𝐫𝐫𝐞𝐜𝐭 𝐦𝐨𝐯𝐢𝐞 𝐧𝐚𝐦𝐞 𝐰𝐢𝐭𝐡 𝐲𝐞𝐚𝐫")
+        k = await msg.reply("𝐨𝐧𝐥𝐲 𝐭𝐲𝐩𝐞 𝐜𝐨𝐫𝐫𝐞𝐜𝐭 𝐦𝐨𝐯𝐢𝐞 𝐧𝐚𝐦𝐞 𝐰𝐢𝐭𝐡 𝐲𝐞𝐚𝐫")
         await asyncio.sleep(8)
         await k.delete()
         return
@@ -813,7 +813,7 @@ async def advantage_spell_chok(msg):
         )
     ] for k, movie in enumerate(movielist)]
     btn.append([InlineKeyboardButton(text="💎 Close 💎", callback_data=f'spolling#{user}#close_spellcheck')])
-    pp = await msg.reply("💎 {u.mention} 𝐂𝐡𝐞𝐜𝐤 𝐮 𝐭𝐲𝐩𝐞𝐝 𝐜𝐨𝐫𝐫𝐞𝐜𝐭 𝐦𝐨𝐯𝐢𝐞 𝐧𝐚𝐦𝐞 💎/n🥏𝐭𝐢𝐩𝐬 :- 𝑂𝑛𝑙𝑦 𝑡𝑦𝑝𝑒 𝑚𝑜𝑣𝑖𝑒 𝑛𝑎𝑚𝑒/n<a href=https://t.me/+tU8INwk_RbRlYWM1><b>📡 𝑅𝑂𝐶𝐾𝐸𝑅'𝑆 𝑂𝐹𝐹𝐼𝐶𝐼𝐴𝐿</b></a>\n",
+    pp = await msg.reply("\n<b>💎<b> {message.from_user.mention}\n 𝐂𝐡𝐞𝐜𝐤 𝐮 𝐭𝐲𝐩𝐞𝐝 𝐜𝐨𝐫𝐫𝐞𝐜𝐭 𝐦𝐨𝐯𝐢𝐞 𝐧𝐚𝐦𝐞 💎/n🥏𝐭𝐢𝐩𝐬 :- 𝑂𝑛𝑙𝑦 𝑡𝑦𝑝𝑒 𝑚𝑜𝑣𝑖𝑒 𝑛𝑎𝑚𝑒/n<a href=https://t.me/+tU8INwk_RbRlYWM1><b>📡 𝑅𝑂𝐶𝐾𝐸𝑅'𝑆 𝑂𝐹𝐹𝐼𝐶𝐼𝐴𝐿</b></a>\n",
     reply_markup=InlineKeyboardMarkup(btn))                   
     await asyncio.sleep(30)
     await pp.delete()
