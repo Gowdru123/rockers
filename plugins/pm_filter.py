@@ -734,7 +734,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"💎 {message.from_user.mention} 𝗨𝗥 𝗥𝗘𝗤𝗨𝗘𝗦𝗧𝗘𝗗 𝗠𝗢𝗩𝗜𝗘 "{search}" " 
+        cap = f"<b>💎 {message.from_user.mention} 𝗨𝗥 𝗥𝗘𝗤𝗨𝗘𝗦𝗧𝗘𝗗 𝗠𝗢𝗩𝗜𝗘 </b>"{search}" " 
     if imdb and imdb.get('poster'):
     
         try:
