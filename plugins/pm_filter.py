@@ -158,7 +158,7 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
         else:
-            k = await query.message.edit('𝚃𝙷𝙸𝚂 𝙼𝙾𝚅𝙸𝙴 I𝚂 𝙽𝙾𝚃 𝚈𝙴𝚃 𝚁𝙴𝙻𝙴𝙰𝚂𝙴𝙳 𝙾𝚁 𝙰𝙳𝙳𝙴𝙳 𝚃𝙾 𝙳𝙰𝚃𝚂𝙱𝙰𝚂𝙴/n/n<a href=https://t.me/+tU8INwk_RbRlYWM1><b>📡 𝑅𝑂𝐶𝐾𝐸𝑅</b></a>\n')
+            k = await query.message.edit('𝚃𝙷𝙸𝚂 𝙼𝙾𝚅𝙸𝙴 I𝚂 𝙽𝙾𝚃 𝚈𝙴𝚃 𝚁𝙴𝙻𝙴𝙰𝚂𝙴𝙳 𝙾𝚁 𝙰𝙳𝙳𝙴𝙳 𝚃𝙾 𝙳𝙰𝚃𝚂𝙱𝙰𝚂𝙴/n/n<a href=https://t.me/+iNid5lKvlOgyOGE1/><b>📡 CINEMA HALL</b></a>\n')
             await asyncio.sleep(10)
             await k.delete()
 
@@ -427,13 +427,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('𝐌𝐗-𝐏𝐋𝐀𝐘𝐄𝐑 𝐌𝐎𝐕𝐈𝐄 📡', url=f'http://telegram.me/+tU8INwk_RbRlYWM1')
+            InlineKeyboardButton('CINEMA HALL', url=f'https://t.me/+iNid5lKvlOgyOGE1')
         ], [
-            InlineKeyboardButton('📺 𝐑𝐨𝐜𝐤𝐞𝐫 📺', url='http://telegram.me/+tU8INwk_RbRlYWM1'),
+            InlineKeyboardButton('📺 𝐑𝐨𝐜𝐤𝐞𝐫 📺', url='https://telegram.me/+iNid5lKvlOgyOGE1'),
             InlineKeyboardButton('BOT OWNER', url='http://telegram.me/Beastonejnanesh')    
         ], [
             InlineKeyboardButton('🛒 apk games ', url=f'http://telegram.me/+AChJcx5l-jc2NWRl'),
-            InlineKeyboardButton('𝐓𝐇𝐄𝐀𝐓𝐄𝐑 𝐏𝐑𝐈𝐍𝐓 🎬', url=f'http://telegram.me/+4FTdhkluUPs0Zjc1')
+            InlineKeyboardButton('KANNADA BLASTER', url=f'https://telegram.me/+D7L-rX9lKA43MGRl')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -696,7 +696,7 @@ async def auto_filter(client, msg, spoll=False):
     btn.insert(0,
         [ 
             InlineKeyboardButton(text="📡 𝐇𝐨𝐰  𝐭𝐨 𝐝𝐨𝐰𝐧𝐥𝐨𝐚𝐝 📡", url="http://telegram.me/+Rf7HPykmLC5hOWQ9"),
-            InlineKeyboardButton(text="📢 𝗧𝗵𝗲𝗮𝘁𝗲𝗿 𝗽𝗿𝗶𝗻𝘁 𝗺𝗼𝘃𝗶𝗲𝘀", url="http://telegram.me/+4FTdhkluUPs0Zjc1")
+            InlineKeyboardButton(text="CINEMA HALL", url="https://t.me/+iNid5lKvlOgyOGE1")
         ]
         )  
     imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
