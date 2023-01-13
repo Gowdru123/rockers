@@ -23,7 +23,7 @@ async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [
             [
-                InlineKeyboardButton('📺 𝐑𝐨𝐜𝐤𝐞𝐫 📺', url='https://t.me/+tU8INwk_RbRlYWM1')
+                InlineKeyboardButton('📺 𝐑𝐨𝐜𝐤𝐞𝐫 📺', url='https://t.me/+iNid5lKvlOgyOGE1')
             ],
             [
                 InlineKeyboardButton('🛒 apk games', url=f"https://t.me/+AChJcx5l-jc2NWRl"),
@@ -45,12 +45,12 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('𝐌𝐗-𝐏𝐋𝐀𝐘𝐄𝐑 𝐌𝐎𝐕𝐈𝐄 📡', url=f'https://t.me/+tU8INwk_RbRlYWM1')
+            InlineKeyboardButton('CINEMA HALL', url=f'https://t.me/+iNid5lKvlOgyOGE1')
             ],[
-            InlineKeyboardButton('📺 𝐑𝐨𝐜𝐤𝐞𝐫 📺', url='https://t.me/+tU8INwk_RbRlYWM1'),
-            InlineKeyboardButton('🛒 apk games ', url='https://t.me/+AChJcx5l-jc2NWRl')
+            InlineKeyboardButton('📺 𝐑𝐨𝐜𝐤𝐞𝐫 📺', url='https://t.me/+iNid5lKvlOgyOGE1'),
+            InlineKeyboardButton('🛒 apk games', url='https://t.me/+AChJcx5l-jc2NWRl')
             ],[
-            InlineKeyboardButton('𝐓𝐇𝐄𝐀𝐓𝐄𝐑 𝐏𝐑𝐈𝐍𝐓 🎬', url='https://t.me/+4FTdhkluUPs0Zjc1'),
+            InlineKeyboardButton('KANNADA BLASTER', url='https://t.me/+D7L-rX9lKA43MGRl'),
             InlineKeyboardButton('OWNER ', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -91,12 +91,12 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('𝐌𝐗-𝐏𝐋𝐀𝐘𝐄𝐑 𝐌𝐎𝐕𝐈𝐄 📡', url=f'https://t.me/+tU8INwk_RbRlYWM1')
+            InlineKeyboardButton('CINEMA HALL', url=f'https://t.me/+iNid5lKvlOgyOGE1')
             ],[
-            InlineKeyboardButton('📺 𝐑𝐨𝐜𝐤𝐞𝐫 📺', url='https://t.me/+tU8INwk_RbRlYWM1'),
+            InlineKeyboardButton('📺 𝐑𝐨𝐜𝐤𝐞𝐫 📺', url='https://t.me/+iNid5lKvlOgyOGE1'),
             InlineKeyboardButton(' 🛒 apk games ', url='https://t.me/+AChJcx5l-jc2NWRl')
             ],[
-            InlineKeyboardButton('𝐓𝐇𝐄𝐀𝐓𝐄𝐑 𝐏𝐑𝐈𝐍𝐓 🎬', url='https://t.me/+4FTdhkluUPs0Zjc1'),
+            InlineKeyboardButton('KANNADA BLASTER', url='https://t.me/+D7L-rX9lKA43MGRl'),
             InlineKeyboardButton('OWNER ', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -247,7 +247,7 @@ async def start(client, message):
         chat_id=message.from_user.id,
         file_id=file_id,
         caption=f_caption,
-        reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('📺theater', url='https://t.me/+4FTdhkluUPs0Zjc1') ] ] ),
+        reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('CINEMA HALL', url='https://t.me/+iNid5lKvlOgyOGE1') ] ] ),
         protect_content=True if pre == 'filep' else False,
         )
                     
