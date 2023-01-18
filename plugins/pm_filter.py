@@ -158,7 +158,8 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
         else:
-            k = await query.message.edit([InlineKeyboardButton]=[Button.url('Click To Check Spelling ✅', f'http://www.google.com/search?q={event.text.replace(" ", "%20")}%20Movie')])
+            k = await query.message.edit([
+            InlineKeyboardButton('Click To Check Spelling ✅', f'http://www.google.com/search?q={event.text.replace(" ", "%20")}%20Movie')])
             await asyncio.sleep(10)
             await k.delete()
 
