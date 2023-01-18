@@ -162,7 +162,7 @@ async def advantage_spoll_choker(bot, query):
              No Results Found For {event.text} 
              Type Only Movie Name 
              newbutton = [Button.url('Click To Check Spelling ✅', f'http://www.google.com/search?q={event.text.replace(" ", "%20")}%20Movie')],
-                         [Button.url('Click To Check Release Date 📅', f'http://www.google.com/search?q={event.text.replace(" ", "%20")}%20Movie%20Release%20Date')]            
+                         [Button.url('Click To Check Release Date 📅', f'http://www.google.com/search?q={event.text.replace(" ", "%20")}%20Movie%20Release%20Date')])            
             await asyncio.sleep(10)
             await k.delete()
 
